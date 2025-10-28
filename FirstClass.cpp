@@ -28,9 +28,9 @@ int main(){
     cout << "The Length is equal to "<< box.getLength()<<" cm"<< endl;
     cout << "The Width is equal to "<< box.getWidth()<<" cm"<< endl;
     cout << "The area is equal to "<< box.getArea()<<" cm^2"<< endl;
-    Car myCar;
+    Car myCar("BMW",2009),c2("Honda",2019);
     myCar.setMaker("BMW");
     myCar.setModel(2009);
-    cout << "My car\'s manufacturer is "<<myCar.getMaker()<<endl;
-    cout << "My car\'s year model is " << myCar.getModel()<<endl;
+    cout << "My car\'s manufacturer is "<<myCar.getMaker()<<endl<<"A random car\'s Manufacturer is " << c2.getMaker() <<endl;
+    cout << "My car\'s year model is " << myCar.getModel()<<endl<<"A random car\'s year model is " << c2.getModel() <<endl;
 }

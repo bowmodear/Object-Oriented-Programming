@@ -20,3 +20,12 @@ int Car::getModel()
 {
     return model;
 }
+
+Car::Car(string m,int y):maker(m),model(y)
+{
+}
+
+Car::~Car()
+{
+    cout<<"GoodBye!"<<endl;
+}
