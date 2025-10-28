@@ -11,6 +11,7 @@ class Car{
     void setModel(int y);
     string getMaker();
     int getModel();
+    Car();
     Car(string m,int y);
     ~Car();
 };

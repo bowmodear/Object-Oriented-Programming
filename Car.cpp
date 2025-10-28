@@ -21,6 +21,10 @@ int Car::getModel()
     return model;
 }
 
+Car::Car():maker("Honda"),model(2019)
+{
+}
+
 Car::Car(string m,int y):maker(m),model(y)
 {
 }
