@@ -1,6 +1,7 @@
 #include<iostream>
 #include"Car.h"
 #include<string>
+#include"calc.h"
 using namespace std;
 
 class Rectangle{
@@ -22,15 +23,20 @@ class Rectangle{
 };
 
 int main(){
-    Rectangle box;
-    box.setLength(15.91);
-    box.setWidth(81.26);
-    cout << "The Length is equal to "<< box.getLength()<<" cm"<< endl;
-    cout << "The Width is equal to "<< box.getWidth()<<" cm"<< endl;
-    cout << "The area is equal to "<< box.getArea()<<" cm^2"<< endl;
-    Car myCar("BMW",2009),c2("Honda",2019);
-    myCar.setMaker("BMW");
-    myCar.setModel(2009);
-    cout << "My car\'s manufacturer is "<<myCar.getMaker()<<endl<<"A random car\'s Manufacturer is " << c2.getMaker() <<endl;
-    cout << "My car\'s year model is " << myCar.getModel()<<endl<<"A random car\'s year model is " << c2.getModel() <<endl;
+    // Rectangle box;
+    // box.setLength(15.91);
+    // box.setWidth(81.26);
+    // cout << "The Length is equal to "<< box.getLength()<<" cm"<< endl;
+    // cout << "The Width is equal to "<< box.getWidth()<<" cm"<< endl;
+    // cout << "The area is equal to "<< box.getArea()<<" cm^2"<< endl;
+    // Car myCar("BMW",2009),c2("Honda",2019);
+    // myCar.setMaker("BMW");
+    // myCar.setModel(2009);
+    // cout << "My car\'s manufacturer is "<<myCar.getMaker()<<endl<<"A random car\'s Manufacturer is " << c2.getMaker() <<endl;
+    // cout << "My car\'s year model is " << myCar.getModel()<<endl<<"A random car\'s year model is " << c2.getModel() <<endl;
+    calc f1;
+    cout << "The first version is "<< f1.add(15,7)<<endl;
+    cout << "The second version is "<< f1.add(15,7,9)<<endl;
+    cout << "The third version is "<< f1.add(15.7f,7.1f)<<endl;
+    cout << "The fourth version is "<< f1.add("Hello","World!")<<endl;
 }
