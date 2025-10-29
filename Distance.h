@@ -1,3 +1,4 @@
+#include<string>
 class Distance{
     private:
     int feet;
@@ -5,5 +6,7 @@ class Distance{
     public:
     Distance();
     Distance(int f,float in);
-    void print();
+    Distance(const Distance& obj);//Copy constructor
+    Distance addDistance(Distance d2);
+    std::string print();
 };
